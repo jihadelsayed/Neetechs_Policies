@@ -10,6 +10,7 @@ export const environment = {
   SERVER_URL_WITH_OUT_SLASH: "https://server.neetechs.com/",
   FrontEnd_URL: "https://main.d2l2e2nscw5pbm.amplifyapp.com",
   LoginURL: "https://accounts.neetechs.com/",
+  JSON_URL: 'https://raw.githubusercontent.com/jihadelsayed/neetechs/main/json/',
   // LoginURL: "http://localhost:4442/",
   OpenAIAPIKey:"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",
 };
