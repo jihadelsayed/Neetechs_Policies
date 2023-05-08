@@ -11,5 +11,7 @@ export const environment = {
   FrontEnd_URL: window.location.origin,
   MainDomain: window.location.hostname.replace(/^[^.]+./, ''),
   LoginURL: "https://accounts." + window.location.hostname.replace(/^[^.]+./, '') +"/",
+  MY_ACCOUNT_URL: "https://myaccount.neetechs.com/",
+  JSON_URL: 'https://raw.githubusercontent.com/jihadelsayed/neetechs/main/json/',
 
 };
