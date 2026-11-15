@@ -56,6 +56,10 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/@neetechs/ui/src/styles/tokens/index.css",
+              "node_modules/@neetechs/ui/src/styles/themes/dark.css",
+              "node_modules/@neetechs/ui/src/styles/themes/light.css",
+              "node_modules/@neetechs/ui/src/components/index.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -202,6 +206,10 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/@neetechs/ui/src/styles/tokens/index.css",
+              "node_modules/@neetechs/ui/src/styles/themes/dark.css",
+              "node_modules/@neetechs/ui/src/styles/themes/light.css",
+              "node_modules/@neetechs/ui/src/components/index.css",
               "src/styles.scss"
             ],
             "scripts": []
