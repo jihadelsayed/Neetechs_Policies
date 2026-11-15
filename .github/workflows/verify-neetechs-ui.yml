@@ -1,0 +1,26 @@
+name: Verify Neetechs UI integration
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "package.json"
+      - "package-lock.json"
+      - "src/styles.scss"
+      - ".github/workflows/verify-neetechs-ui.yml"
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "16"
+          cache: npm
+      - name: Install lockfile without deploying
+        run: npm ci --force --no-audit --no-fund
+      - name: Verify dependency is locked at 0.2.0
+        run: node -e "const p=require('./package.json'),l=require('./package-lock.json'); if(p.dependencies['@neetechs/ui']!=='0.2.0'||l.packages['node_modules/@neetechs/ui']?.version!=='0.2.0')process.exit(1)"
+      - name: Build without Firebase deployment
+        run: npx ng build --configuration production
