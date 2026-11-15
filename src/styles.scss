@@ -1,3 +1,5 @@
+/* Neetechs CSS layers are registered through angular.json because Angular 14's
+   PostCSS import resolver does not resolve the package export path in SCSS. */
 /* You can add global styles to this file, and also import other style files */
 // @import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
