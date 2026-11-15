@@ -1,10 +1,5 @@
-/* Shared Neetechs tokens/themes/components. Do not replace the existing
-   Tailwind or Angular Material reset until migration is visually verified. */
-@import '@neetechs/ui/tokens.css';
-@import '@neetechs/ui/themes/dark.css';
-@import '@neetechs/ui/themes/light.css';
-@import '@neetechs/ui/components.css';
-
+/* Neetechs CSS layers are registered through angular.json because Angular 14's
+   PostCSS import resolver does not resolve the package export path in SCSS. */
 /* You can add global styles to this file, and also import other style files */
 // @import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
